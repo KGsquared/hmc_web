@@ -1,19 +1,26 @@
-<?xml version="1.0" endcoding="UTF-8" ?>
-<web-app xmlns="https://java.sun.com/xml/ns/j2ee"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://java.sun.com/xml/ns/j2ee
-                      https://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-  version="2.4"
-  metadata-complete="true">
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
-	<context-param>
-		<param-name>db</param-name>
-		<param-value>/WEB-INF/database/HMC_RECORDS</param-value>
-	</context-param>
-	
-	<listener>
-		<listener-class>hmc_controller.DBServletContextListener</listener-class>
-	</listener>
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+<welcome-file-list>
+  <welcome-file>Serv1.do</welcome-file>
+</welcome-file-list>
+
+<servlet>
+	<servlet-name>Chapter1 Servlet</servlet-name>
+	<servlet-class>Ch1Servlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Chapter1 Servlet</servlet-name>
+	<url-pattern>/Serv1.do</url-pattern>
+</servlet-mapping>
+
+<context-listener>
+	<listener-class>controller.DBContextListener</listener-class>
+</context-listener>
+
+
 </web-app>
