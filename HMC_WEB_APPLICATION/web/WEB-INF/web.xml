@@ -11,6 +11,6 @@
 	</context-param>
 	
 	<listener>
-		<listener-class>DBServletContextListener</listener-class>
+		<listener-class>hmc_controller.DBServletContextListener</listener-class>
 	</listener>
 </web-app>

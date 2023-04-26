@@ -28,9 +28,6 @@ public class DBServletContextListener implements ServletContextListener {
         String url = sce.getServletContext().getAttribute("db").toString();
 
         // database connection parameters
-       // String url = ;
-     
-
         try {
             conn = DriverManager.getConnection(url);
             sc.setAttribute("conn", conn);
