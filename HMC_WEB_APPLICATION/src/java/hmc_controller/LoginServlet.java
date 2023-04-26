@@ -30,7 +30,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author user
  */
-@WebServlet("/LoginServlet.dos")
+@WebServlet("/LoginServlet.do")
 public class LoginServlet extends HttpServlet {
     // statement to execute when user logs in 
     private String sql = "SELECT * FROM login";
