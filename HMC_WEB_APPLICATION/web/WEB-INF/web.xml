@@ -18,7 +18,12 @@ version="2.4">
 	<url-pattern>/LoginServlet.do</url-pattern>
 </servlet-mapping>
 
+<context-param>
+    <param-name>db</param-name>
+    <param-value>./database/HMC_RECORD</param-value>
+</context-param>
+
 <context-listener>
-	<listener-class>controller.DBContextListener</listener-class>
+	<listener-class>hmc_controller.DBContextListener</listener-class>
 </context-listener>
 </web-app>
