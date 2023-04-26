@@ -5,22 +5,20 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 version="2.4">
 <welcome-file-list>
-  <welcome-file>Serv1.do</welcome-file>
+  <welcome-file>index.html</welcome-file>
 </welcome-file-list>
 
 <servlet>
-	<servlet-name>Chapter1 Servlet</servlet-name>
-	<servlet-class>Ch1Servlet</servlet-class>
+	<servlet-name>LoginServlet.do</servlet-name>
+	<servlet-class>hmc_controller.LoginServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
-	<servlet-name>Chapter1 Servlet</servlet-name>
-	<url-pattern>/Serv1.do</url-pattern>
+	<servlet-name>LoginServlet.do</servlet-name>
+	<url-pattern>/LoginServlet.do</url-pattern>
 </servlet-mapping>
 
 <context-listener>
 	<listener-class>controller.DBContextListener</listener-class>
 </context-listener>
-
-
 </web-app>
