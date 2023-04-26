@@ -1,10 +1,13 @@
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+<?xml version="1.0" endcoding="UTF-8" ?>
+<web-app xmlns="https://java.sun.com/xml/ns/j2ee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-  version="6.0"
+  xsi:schemaLocation="https://java.sun.com/xml/ns/j2ee
+                      https://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4"
   metadata-complete="true">
-	
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 	<context-param>
 		<param-name>db</param-name>
 		<param-value>/WEB-INF/database/HMC_RECORDS</param-value>
