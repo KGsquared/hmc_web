@@ -1,0 +1,16 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+  version="6.0"
+  metadata-complete="true">
+	
+	<context-param>
+		<param-name>db</param-name>
+		<param-value>/WEB-INF/database/HMC_RECORDS</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>DBServletContextListener</listener-class>
+	</listener>
+</web-app>
